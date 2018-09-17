@@ -1,0 +1,124 @@
+
+.navbar a:hover {
+    background-color: grey;
+}
+@media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+.navpills {
+    color: white;
+}
+
+/* hover part */
+
+.imggandalf {
+    opacity: 0.5;
+}
+.imggandalf:hover {
+    opacity: 1.0;
+}
+.containeur {
+    position: relative;
+   text-align: center;
+    color: black;
+  }
+.containeur:hover {
+  transition : height 2s ease-in 3s;
+}
+.reward {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 50;
+}
+.color {
+  color: orange;
+}
+.containeur:hover .reward{
+  display: none;
+	opacity: 0;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  color: white;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+}
+.containeur:hover .text{
+  font-size: 20px;
+	opacity: 65;
+	position: absolute;
+  text-align: center;
+  top: 80%;
+}
+.imghobbit {
+    opacity: 0.5;
+}
+.imghobbit:hover {
+    opacity: 1.0;
+}
+.containeur2 {
+    position: relative;
+   text-align: center;
+} 
+.dead{
+  position: absolute;
+    top: 35%;
+    left: 50%;
+  color: white;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+}  
+.imgdwarf {
+    opacity: 0.5;
+}
+.imgdwarf:hover {
+    opacity: 1.0;
+}
+.containeur3 {
+    position: relative;
+   text-align: center;
+} 
+.goldcoins{
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 50;  
+}
+.containeur3:hover .goldcoins{
+  display: none;
+  opacity: 0;
+}
+
+/* validator part */ 
+.orc {
+    width: 140px;
+    height: 140px;
+}
+.orc2 {
+    width: 140px;
+    height: 140px;
+}
+.goblin {
+    width: 140px;
+    height: 140px;
+}
+.gollum {
+    width: 200px;
+    height: 140px;
+}
+.ring {
+    width: 140px;
+    height: 140px;
+}
