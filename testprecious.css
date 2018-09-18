@@ -1,16 +1,81 @@
-.navbar a:hover {
-    background-color: grey;
+@font-face {
+    font-family: "aniron";
+    src: url(pete-klassen_aniron/anicm___.ttf);
+}
+@font-face{
+    font-family: "tengwarannatar";
+    src: url(tengwar_annatar/tngan.ttf);
+}
+@font-face {
+    font-family: "partybusiness";
+    src: url(nancy-lorenz_party-business/partybusiness.ttf);
+}
+
+body{
+    font-family: "partybusiness";
+    font-size: 35px;
+}
+.light{
+    background-image: url(https://zupimages.net/up/18/09/buog.png);
+}
+.dark {
+    background-image: url(https://zupimages.net/up/14/14/9dmx.png);
+}
+
+/* nav part */
+nav {
+    font-family: "aniron";
+    font-size: 25px;
+}
+.fellows {
+    border-bottom: solid white 2px;
+}
+/* Carrousel part */
+.sauron {
+    font-size: 70px;
 }
 @media (max-width: 600px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
 }
-.navpills {
-    color: white;
+/* pills part */
+h3 { font-family: "aniron";
+    font-size: 30px;
+}
+h4 {
+    font-family: "aniron";
+    font-size: 20px;
+}
+.letters {
+    font-family: "tengwarannatar";
+    font-size: 30px;
+    color: #FF7B0D;
+}
+.modif a {
+    color: grey;
+    font-family: "aniron";
+    font-size: 20px;
+}
+.dangerous a {
+    color: #FF7B0D;
+    border-bottom: solid #FF7B0D 5px;
+    font-family: "aniron";
+    font-size: 20px;
+}
+.letter {
+    font-family: "tengwarannatar";
+    font-size: 25px;
+}
+/* cards part */
+.card {
+    background-color: black;
+}
+.card-text {
+    color: grey;
 }
 
-/* hover part */
+/* hover part Gandalf*/
 
 .imggandalf {
     opacity: 0.5;
@@ -26,6 +91,9 @@
 .containeur:hover {
   transition : height 2s ease-in 3s;
 }
+.color {
+    color: #FF7B0D;
+  }
 .reward {
   position: absolute;
   top: 30px;
@@ -34,10 +102,8 @@
   border: none;
   border-radius: 5px;
   background-color: white;
-  opacity: 50;
-}
-.color {
-  color: orange;
+  opacity: 0.6;
+  font-size: 30px;
 }
 .containeur:hover .reward{
   display: none;
@@ -48,63 +114,137 @@
     top: 50%;
     left: 50%;
   color: white;
-  font-size: 30px;
+  font-size: 50px;
   transform: translate(-50%, -50%);
 }
 .containeur:hover .text{
-  font-size: 20px;
+  font-size: 30px;
 	opacity: 65;
 	position: absolute;
   text-align: center;
   top: 80%;
 }
-.imghobbit {
+/* hover part Aragorn*/
+.imgaragorn {
     opacity: 0.5;
 }
-.imghobbit:hover {
+.imgaragorn:hover {
     opacity: 1.0;
 }
-.containeur2 {
-    position: relative;
-   text-align: center;
-} 
-.dead{
-  position: absolute;
-    top: 35%;
-    left: 50%;
-  color: white;
-  font-size: 30px;
-  transform: translate(-50%, -50%);
-}  
+
+/* hover part dwarf*/
 .imgdwarf {
     opacity: 0.5;
 }
 .imgdwarf:hover {
     opacity: 1.0;
 }
+.gimli{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  color: white;
+  text-decoration: line-through;
+  text-decoration-color: #FF7B0D;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+}
+.containeur3:hover .gimli{
+  font-size: 30px;
+	opacity: 65;
+	position: absolute;
+  text-align: center;
+  top: 80%;
+}
 .containeur3 {
     position: relative;
    text-align: center;
-} 
-.goldcoins{
-  position: absolute;
-  top: 30px;
-  left: 90px;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
-  opacity: 50;  
 }
-.containeur3:hover .goldcoins{
-  display: none;
-  opacity: 0;
+.dead {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #FF7B0D;
+  }
+  .containeur3:hover .dead{
+    display: none;
+      opacity: 0;
+  }
+
+/* media body part*/
+.media-body {
+    color: white;
+}
+button {
+    color: #FF7B0D;
+}
+h5 {
+    font-size: 40px;
+    color: #FF7B0D;
+}
+.capture {
+    color: black;
+}
+.captures {
+    color: black;
+    text-decoration: underline;
+}
+.couleur {
+    color: #FF7B0D;
+}
+/* panel */ 
+.titre {
+    color: white;
+}
+.table {
+    background-color: #DCDCDC;
+}
+.card-header {
+    background-color: #FF7B0D;
+    color: white;
+}
+.gollumpart1 {
+    background-color: #DCDCDC;
+    color: black;
+}
+.card-title {
+    color: black;
+}
+.gollumpart {
+    color: black;
+}
+.army {
+    color: black;
+    font-family: "aniron";
+    font-size: 20px;
+}
+.lorem {
+    color: black;
+    font-size: 25px;
+}
+.info {
+    padding-top: 5%;
+    margin-left: 10%;
+    color: #FF7B0D;
+}
+.sauronbutton {
+    font-size: 30px;
+    color:#FF7B0D;
 }
 
-/* validator part */ 
-.orc {
-    width: 140px;
-    height: 140px;
+/* form part*/
+.contact {
+    color: white;
 }
+footer {
+    background-color: #FF7B0D;
+}
+
+/* photos part */ 
 .orc2 {
     width: 140px;
     height: 140px;
@@ -115,9 +255,18 @@
 }
 .gollum {
     width: 200px;
-    height: 140px;
+    height: 200px;
 }
-.ring {
-    width: 140px;
-    height: 140px;
+.armyimg {
+    width: 300px;
+    height: 200px;
+    margin-top: 10%;
+}
+.needyou {
+    width: 300px;
+    height: 200px;
+}
+.map {
+    width: 500px;
+    height: 400px;
 }
